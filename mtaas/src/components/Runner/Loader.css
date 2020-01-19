@@ -1,0 +1,17 @@
+.mainDiv{
+    overflow: hidden;
+}
+.navDiv{
+    float:left;
+    padding-bottom: 1000px;
+    position: fixed;
+    top:0;
+}
+.loaderDiv{
+    text-align: center;
+    padding: 70px 0;
+}
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }

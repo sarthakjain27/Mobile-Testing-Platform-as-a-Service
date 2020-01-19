@@ -1,0 +1,30 @@
+.mainDiv{
+    overflow: hidden;
+}
+.navDiv{
+    float:left;
+    padding-bottom: 1000px;
+    position: fixed;
+    top:0;
+}
+.runDiv{
+    float: left;
+    width:95%;
+    padding-left:100px;
+    padding-top: 30px;
+}
+.listDiv{
+    width:90%;
+    float:right;
+    margin:28px;
+    z-index:-1;
+}
+.jobListDiv{
+    width: 50%;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+.thCol{
+    width:10%
+}
