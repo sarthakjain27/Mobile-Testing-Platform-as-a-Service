@@ -5,10 +5,11 @@ const unlinkAsync = promisify(fs.unlink)
 var Request = require('request');
 const User=require('../models/user');
 const Run=require('../models/testRun.model');
+const GlobalVar = require("../GlobalVar");
 const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 var devicefarm = new AWS.DeviceFarm({apiVersion: '2015-06-23',
-                                        accessKeyId:'AKIAIIQOZPIYGO6BPRPA',
-                                        secretAccessKey:'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',
+                                        accessKeyId:GlobalVar.AWS_ACCESS_KEY_ID_SARTHAK,
+                                        secretAccessKey:GlobalVar.AWS_SECRET_ACCESS_KEY_SARTHAK,
                                         region:'us-west-2'});
 
 getOneProjectAllRunsManager = (req,res)=>{
