@@ -86,10 +86,12 @@ class Routes extends React.Component {
 
         <Route path="/chat" component={() => {
           if (localStorage.getItem('role') === 'Admin') {
-            window.location.href = "http://localhost:8080/admin?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
+            //window.location.href = "http://localhost:8080/admin?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
+            window.location.href = "http://52.91.97.2:8080/admin?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
             return null;
           } else {
-            window.location.href = "http://localhost:8080?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
+            //window.location.href = "http://localhost:8080?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
+            window.location.href = "http://52.91.97.2:8080?username=" + localStorage.getItem('username') + "&" + "role=" + localStorage.getItem('role') + "";
             return null;
           }
         }} />

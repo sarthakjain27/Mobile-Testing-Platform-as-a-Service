@@ -1,14 +1,13 @@
 # Use a lighter version of Node as a parent image
-FROM mhart/alpine-node:8.11.4
+FROM mhart/alpine-node:10.16.3
 
 # Set the working directory to /client
 # Delete node_modules and then do docker build
 WORKDIR /mtaas-backend
 
 # copy package.json into the container at /client
-COPY package*.json /mtaas-backend/
+COPY package.json /mtaas-backend/
 
-# install dependencies
 RUN apk add --no-cache make gcc g++ python && \
   npm install && \
   npm rebuild bcrypt --build-from-source && \
